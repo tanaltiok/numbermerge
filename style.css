@@ -1,0 +1,50 @@
+:root {
+  --bg1: #3d1780; --bg2: #120833; --card: #241148; --card2: #1a0c3a;
+  --gold: #ffc733; --gold-light: #fff094; --ink: #0a0512;
+  --text: #f3eefe; --muted: #c9bde8; --link: #ffd45c;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Avenir Next", "Segoe UI", Roboto, sans-serif;
+  color: var(--text);
+  background: radial-gradient(ellipse at 50% 0%, #7b2fb3 0%, transparent 55%), linear-gradient(180deg, var(--bg1), var(--bg2));
+  background-attachment: fixed;
+  min-height: 100vh;
+  line-height: 1.6;
+}
+.wrap { max-width: 760px; margin: 0 auto; padding: 48px 20px 64px; }
+header { text-align: center; margin-bottom: 32px; }
+header img { width: 112px; height: 112px; border-radius: 26px; box-shadow: 0 10px 30px rgba(0,0,0,.45); }
+h1 {
+  font-weight: 800; font-size: clamp(30px, 6vw, 44px); margin: 18px 0 4px; letter-spacing: .5px;
+  color: var(--gold-light);
+  text-shadow: 0 3px 0 var(--ink), 2px 0 0 var(--ink), -2px 0 0 var(--ink), 0 -2px 0 var(--ink);
+}
+.tag { color: var(--muted); margin: 0; font-weight: 600; }
+nav { display: flex; gap: 10px; justify-content: center; margin-top: 18px; flex-wrap: wrap; }
+nav a {
+  text-decoration: none; color: #fff; font-weight: 700; padding: 9px 18px; border-radius: 14px;
+  background: linear-gradient(180deg, #bd85ff, #7338db); border: 2.5px solid var(--ink);
+  box-shadow: 0 4px 0 var(--ink);
+}
+nav a.current { background: linear-gradient(180deg, #80f55c, #1aad40); }
+.card {
+  background: linear-gradient(180deg, var(--card), var(--card2));
+  border: 3px solid var(--gold); outline: 3px solid var(--ink);
+  border-radius: 24px; padding: 28px 26px; margin-top: 22px;
+  box-shadow: 0 12px 34px rgba(0,0,0,.35);
+}
+h2 { color: var(--gold-light); font-size: 21px; margin: 26px 0 8px; }
+h2:first-child { margin-top: 0; }
+p, li { color: var(--text); }
+ul { padding-left: 22px; }
+a { color: var(--link); }
+.muted { color: var(--muted); font-size: 14px; }
+.faq h3 { margin: 20px 0 4px; font-size: 17px; color: #fff; }
+.contact {
+  display: inline-block; margin-top: 6px; font-weight: 800; text-decoration: none;
+  color: var(--ink); background: linear-gradient(180deg, var(--gold-light), var(--gold));
+  padding: 10px 20px; border-radius: 14px; border: 2.5px solid var(--ink); box-shadow: 0 4px 0 var(--ink);
+}
+footer { text-align: center; margin-top: 36px; color: var(--muted); font-size: 13px; }
